@@ -1,0 +1,473 @@
+
+<!doctype html>
+<!--[if IEMobile 7]><html class="no-js iem7"  lang="en" dir="ltr"><![endif]-->
+<!--[if (gt IEMobile 7)|!(IEMobile)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<!--[if lt IE 7]><html class="no-js ie6 oldie"  lang="en" dir="ltr"><![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js ie7 oldie"  lang="en" dir="ltr"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js ie8 oldie"  lang="en" dir="ltr"><![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js"  lang="en" dir="ltr"><!--<![endif]-->
+<!--[if (gte IE 9)|(gt IEMobile 7)]><!--><html class="no-js"  
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/terms/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:og="http://ogp.me/ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:sioc="http://rdfs.org/sioc/ns#"
+  xmlns:sioct="http://rdfs.org/sioc/types#"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"><!--<![endif]-->
+<head>
+<title>Linked Data track | ApacheCon Europe 2014</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="http://events.linuxfoundation.org/sites/all/themes/lfevents/favicon.ico" />
+<meta name="description" content="Linked Data track at the ApacheCon EU 2014" />
+<meta name="keywords" content="Linked Data, RDF, Semantic Web, Web of Data, Linux Foundation, Linux Foundation Events, LinuxCon, Kernel Summit, Collab Summit, Collaboration Summit, Japan Linux Symposium, Linux Plumbers Conference, Linux Kernel Summit, linux conference, Open Source, open source, Linux Kernel Training, kernel, linux kernel, Linus Torvalds, open source convention, open source linux conference, open source linux convention, webinars, linux webinars" />
+<link rel="apple-touch-icon" sizes="144x144" href="http://events.linuxfoundation.org/sites/all/themes/lfevents/apple-touch-icon-144x144.png"><link rel="apple-touch-icon" sizes="114x114" href="http://events.linuxfoundation.org/sites/all/themes/lfevents/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="72x72" href="http://events.linuxfoundation.org/sites/all/themes/lfevents/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" href="http://events.linuxfoundation.org/sites/all/themes/lfevents/apple-touch-icon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1"><meta http-equiv="cleartype" content="on">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<link rel="stylesheet" href="http://events.linuxfoundation.org/sites/events/files/css/css_pbm0lsQQJ7A7WCCIMgxLho6mI_kBNgznNUWmTWcnfoE.css" />
+<link rel="stylesheet" href="http://events.linuxfoundation.org/sites/events/files/css/css_kaR8VM0ilFCoJHn_WJuHXQQBlw4UWRebTyLvP48GBXg.css" />
+<link rel="stylesheet" href="http://events.linuxfoundation.org/sites/events/files/css/css_-TNq6F6EH1K3WcBMUMQP90OkyCq0Lyv1YnyoEj3kxiU.css" media="screen" />
+<style media="print">#sb-container{position:relative;}#sb-overlay{display:none;}#sb-wrapper{position:relative;top:0;left:0;}#sb-loading{display:none;}
+</style>
+<link rel="stylesheet" href="http://events.linuxfoundation.org/sites/events/files/css/css_DKymsCWhITIt259RmY6ylliu197A0HU9mEYv43u6BlI.css" />
+<link rel="stylesheet" href="http://events.linuxfoundation.org/sites/events/files/css/css_KpHsFsHL5G3x9EUJr5pMqQKsGs4fdCXEGrY6HhOgLHA.css" media="screen" />
+<link rel="stylesheet" href="http://events.linuxfoundation.org/sites/events/files/css/css_GpoqO1H_YKBzOUVTKzK4d9W18v7xNMiFHpOi_Fjx5zo.css" />
+<link rel="stylesheet" href="http://events.linuxfoundation.org/sites/events/files/css/css_nQONi4K15OaZ0zkP9PTtaZxqiROn4iT1VEyElXJyBbU.css" />
+<link rel="stylesheet" href="http://events.linuxfoundation.org/sites/events/files/css/css_5aKLUpyguAu6S4H8fg55TvXLBOfjmtpz9tFCjcoyUks.css" />
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:700,regular&amp;subset=latin" />
+<!--[if lt IE 9]>
+  <link rel="stylesheet" href="http://events.linuxfoundation.org/sites/all/themes/lfevents/css/ie.css" />
+  <script src="http://events.linuxfoundation.org/sites/all/themes/lfevents/js/html5.js"></script>
+<![endif]-->
+
+</head>
+<body class="not-front no-sidebars page-events page-events-apachecon-europe color-scheme-purple lf-assets pre-event-page content-container-breakout pane-contain-all bg-wood i18n-en  bg-wood" >
+<a href="#main-content" class="element-invisible element-focusable">Skip to main content</a>
+
+    <div id="overlay-disable-message" class="clearfix"><h3 class="element-invisible">Options for the administrative overlay</h3><a href="/user/1721/edit?destination=events/apachecon-europe#edit-overlay-control" id="overlay-profile-link" class="overlay-exclude element-invisible">If you have problems accessing administrative pages on this site, disable the overlay on your profile page.</a> <a href="/overlay/dismiss-message?destination=events/apachecon-europe&amp;token=si5fiH5-Z7O1KOGcTGiCWi_Q5TCzkej_7KNRh_BfXc0" id="overlay-dismiss-message" class="overlay-exclude element-invisible">Dismiss this message.</a></div>  
+
+
+
+
+<div id="content-wrapper" class="fullwidth">
+  <div class="container">
+    <div class="main-content">
+
+      <div class="main" role="main" id="#main-content">
+        <div class="main-inner">
+                                <h1 class="page-title">ApacheCon Europe 2014</h1>
+                    
+          
+          
+          
+                  </div>
+
+        
+        
+    <div class="panel-display panel-1col clearfix" >
+  <div class="panel-panel panel-col">
+    <div><div class="panel-pane pane-panels-mini pane-events-banner pane-container-breakout" id="pane-scroll-new-42">
+
+  <div class="pane-container">    
+            
+    
+          <div class="background" style="background-image: url(http://events.linuxfoundation.org/sites/events/files/styles/1200px_maxwidth/public/banner-images/apachecon_eu_hdr_prpl.jpg?itok=1lGx8AxE);">        <div class="pane-content">
+      <div class="panel-display two-33-66 clearfix" id="mini-panel-events_banner">
+    <div class="region-inner-wrap">
+    <div class="region region-two-33-66-first">
+      <div class="region-inner clearfix">
+        <div class="panel-pane pane-entity-field pane-taxonomy-term-field-events-logo-white" id="pane-scroll-new-30">
+  
+  <div class="pane-container">      
+              
+      
+    <div class="pane-content">
+      
+
+<div class="field field-type-image">
+  
+        <a href="http://events.linuxfoundation.org/events/apachecon-europe/">  
+                <img typeof="foaf:Image" src="http://events.linuxfoundation.org/sites/events/files/logo_apachecon_eu_white_0.png" width="342" height="107" alt="ApacheCon EU" title="ApacheCon EU" /></a>        </div>
+    </div>
+  
+      
+      </div>
+</div>
+      </div>
+    </div>
+    <div class="region region-two-33-66-second">
+      <div class="region-inner clearfix">
+        <div class="panel-pane pane-panels-mini pane-events-banner-social-media" id="pane-scroll-new-31">
+  
+  <div class="pane-container">      
+              
+      
+    <div class="pane-content">
+      <div class="panel-display panel-2col clearfix" id="mini-panel-events_banner_social_media">
+  <div class="panel-panel panel-col-first">
+    <div class="inside">
+
+<div class="field field-type-text">
+  
+  
+                #apachecon        </div>
+</div>
+  </div>
+
+  <div class="panel-panel panel-col-last">
+    <div class="inside">
+  <div class="field field-type-link-field">
+    <a href="http://twitter.com/ApacheCon" class="banner-twitter-icon">Twitter Icon</a>  </div>
+
+  <div class="field field-type-link-field">
+    <a href="http://www.facebook.com/TheLinuxFoundation" class="banner-facebook-icon">http://www.facebook.com/TheLinuxFoundation</a>  </div>
+
+  <div class="field field-type-link-field">
+    <a href="http://www.linkedin.com/company/the-linux-foundation" class="banner-linked-icon">LinkedIn Icon</a>  </div>
+
+  <div class="field field-type-link-field">
+    <a href="https://plus.google.com/105083814157272466314" class="banner-gplus-icon">Gplus Icon</a>  </div>
+</div>
+  </div>
+</div>
+    </div>
+  
+      
+      </div>
+</div>
+<div class="panel-separator"></div><div class="panel-pane pane-panels-mini pane-events-banner-data" id="pane-scroll-new-32">
+  
+  <div class="pane-container">      
+              
+      
+    <div class="pane-content">
+      <div class="panel-display panel-2col clearfix" id="mini-panel-events_banner_data">
+  <div class="panel-panel panel-col-first">
+    <div class="inside"><div class="panel-pane pane-custom pane-1" id="pane-scroll-new-33">
+  
+  <div class="pane-container">      
+              
+      
+    <div class="pane-content">
+       <p>Corinthia Hotel</p>
+<p>Budapest, Hungary</p>
+     </div>
+  
+      
+      </div>
+</div>
+<div class="panel-separator"></div><div class="panel-pane pane-entity-field pane-node-field-events-date" id="pane-scroll-new-36">
+  
+  <div class="pane-container">      
+              
+      
+    <div class="pane-content">
+      
+
+<div class="field field-type-datetime">
+  
+  
+                November 17 - 21, 2014        </div>
+    </div>
+  
+      
+      </div>
+</div>
+</div>
+  </div>
+
+  <div class="panel-panel panel-col-last">
+    <div class="inside"><div class="panel-pane pane-entity-field pane-node-field-banner-buttons" id="pane-scroll-new-37">
+  
+  <div class="pane-container">      
+              
+      
+    <div class="pane-content">
+      
+
+<div class="field field-type-link-field">
+  
+  
+      <div class="field-items">
+              <div class="field-item even"><a href="http://events.linuxfoundation.org/events/apachecon-europe/attend/register" class="button events-banner">Register Now</a></div>
+              <div class="field-item odd"><a href="http://events.linuxfoundation.org/events/apachecon-europe/program/cfp" class="button events-banner">Submit Talk</a></div>
+          </div>
+  </div>
+    </div>
+  
+      
+      </div>
+</div>
+</div>
+  </div>
+</div>
+    </div>
+  
+      
+      </div>
+</div>
+      </div>
+    </div>
+  </div>
+      <div class="region region-two-33-66-bottom region-conditional-stack">
+      <div class="region-inner clearfix">
+        <div class="panel-pane pane-block pane-events-events-submenu pane-container-breakout" id="pane-scroll-new-29">
+  
+  <div class="pane-container">      
+              
+      
+    <div class="pane-content">
+      <a class="events-submenu-toggle" data-toggle="collapse" data-target=".event-nav-collapse">Event Menu</a>       
+<div class="event-nav-collapse"><ul class="events-submenu" role="navigation"><li><a href="http://events.linuxfoundation.org/events/apachecon-europe" class="active">Home</a></li><li class="dd"><a href="http://events.linuxfoundation.org/events/apachecon-europe/program/about">Program</a><ul class="dd-menu" id="dd-1"><li><a href="http://events.linuxfoundation.org/events/apachecon-europe/program/about">About</a></li><li><a href="http://events.linuxfoundation.org/events/apachecon-europe/program/cfp">CFP</a></li></ul></li><li class="dd"><a href="http://events.linuxfoundation.org/events/apachecon-europe/attend/hotel-and-travel">Attend</a><ul class="dd-menu" id="dd-2"><li><a href="http://events.linuxfoundation.org/events/apachecon-europe/attend/hotel-and-travel">Hotel &amp; Travel</a></li><li><a href="http://events.linuxfoundation.org/events/apachecon-europe/attend/register">Register</a></li><li><a href="http://events.linuxfoundation.org/events/apachecon-europe/attend/testimonials">Testimonials</a></li><li><a href="http://events.linuxfoundation.org/events/apachecon-europe/attend/visa-request">Visa Letter Request</a></li><li><a href="http://events.linuxfoundation.org/events/apachecon-europe/attend/our-event-policy">Our Event Policy</a></li><li><a href="http://events.linuxfoundation.org/events/apachecon-europe/attend/contact-us">Contact Us</a></li></ul></li><li class="dd"><a href="http://events.linuxfoundation.org/events/apachecon-europe/sponsor">Sponsor</a><ul class="dd-menu" id="dd-3"><li><a href="http://events.linuxfoundation.org/events/apachecon-europe/sponsor/our-sponsors">Our Sponsors</a></li></ul></li></ul></div>    </div>
+  
+      
+      </div>
+</div>
+      </div>
+    </div>
+  </div>
+    </div>
+          </div>    
+    
+      </div>
+</div>
+<div class="panel-pane pane-panels-mini pane-event-experience-the-event" id="pane-scroll-new-45">
+  
+  <div class="pane-container">      
+              
+      
+    <div class="pane-content">
+      <div class="panel-display two-66-33 clearfix" id="mini-panel-event_experience_the_event">
+    <div class="region region-two-66-33-first">
+    <div class="region-inner clearfix">
+      <div class="panel-pane pane-custom pane-2 experience-event-dd" id="pane-scroll-new-9">
+  
+  <div class="pane-container">      
+
+    <h2 class="pane-title" style="font-size: 3.5em; margin-bottom: -0.5em; vertical-align: middle;">
+      <img src="images/semweb-apache-small.png" alt="Linked Data track at the ApacheCon EU 2014" />
+      Linked Data track
+    </h2>         
+      
+    <div class="pane-content">
+
+      <p>
+        <a href="http://apachecon.com">ApacheCon</a> brings together the open source community to learn 
+        about and collaborate on the technologies and projects driving the future of open source, big 
+        data and cloud computing. 
+        Apache projects have and continue to be hugely influential in the innovation and development 
+        of software development across a plethora of categories from content, databases and servers, 
+        to big data, cloud, mobile and virtual machine. The developers, programmers, committers and 
+        users driving this innovation and utilizing these tools will meet in Budapest on November 17-19, 
+        for collaboration, education and community building.
+      </p>
+
+      <p>
+        In the last years <a href="http://linkeddata.org">Linked Data</a> has become an important topic in the 
+        Apache Software Foundation, with projects like <a href="http://jena.apache.org">Jena</a>, 
+        <a href="http://marmotta.apache.org">Marmotta</a>, <a href="http://stanbol.apache.org">Stanbol</a>, 
+        <a href="http://clerezza.apache.org">Clerezza</a> and <a href="http://any23.apache.org">Any23</a>. 
+        Therefore we are organizing a dedicated track <a href="http://events.linuxfoundation.org/events/apachecon-europe/program/cfp">there</a> 
+        where group together relevant proposals. The track should be a place where all these projects can 
+        meet together, allowing to find common synergies across different projects and hackers.
+      </p>
+
+      <p>
+        Chairs: Sergio Fernández (<a href="http://marmotta.apache.org">Marmotta</a>) and 
+        Andy Seaborne (<a href="http://jena.apache.org">Jena</a>).        
+      </p>
+
+      <p>
+        Further details and submission system at <a href="http://apachecon.eu">apachecon.eu</a>.
+        Please, notice that the track will be available in the system only in the following weeks; 
+        so in the meantime please properly label your proposals.
+      </p>
+
+    </div>
+  
+      
+      </div>
+</div>
+
+    </div>
+  </div>
+  <div class="region region-two-66-33-second">
+    <div class="region-inner clearfix">
+      <div class="panel-pane pane-panels-mini pane-event-about-logo-stacked" id="pane-scroll-new-16">
+  
+  <div class="pane-container">
+      
+    <div class="pane-content">
+      <div class="panel-display one-column clearfix" id="mini-panel-event_about_logo_stacked">
+  <div class="region region-one-main">
+    <div class="region-inner clearfix">
+      <div class="panel-pane pane-entity-field pane-taxonomy-term-field-events-logo-white" id="pane-scroll-new-3">
+  
+  <div class="pane-container">      
+              
+      
+    <div class="pane-content">
+      
+
+<div class="field field-type-image">
+  
+        <a href="http://events.linuxfoundation.org/events/apachecon-europe/">
+                <img typeof="foaf:Image" src="http://events.linuxfoundation.org/sites/events/files/styles/about_logo_h140/public/logo_apachecon_eu_white_0.png?itok=YUFUZKBX" width="342" height="107" alt="ApacheCon EU" title="ApacheCon EU" /></a>        </div>
+    </div>
+  
+      
+      </div>
+</div>
+<div class="panel-pane pane-node-body event-about" id="pane-scroll-new-4">
+  
+  <div class="pane-container">      
+              
+      
+    <div class="pane-content">
+      
+
+<div class="field field-type-text-with-summary">
+  
+  
+                 <p>ApacheCon brings together the open source community to learn about and collaborate on the technologies and projects driving the future of open source, big data and cloud computing.</p>
+         </div>
+    </div>
+  
+      
+      </div>
+</div>
+    </div>
+  </div>
+</div>
+    </div>
+  
+      
+      </div>
+</div>
+    </div>
+  </div>
+  </div>
+    </div>
+  
+      
+      </div>
+</div>
+<div class="panel-pane pane-panels-mini pane-event-silver-bronze-sponsors" id="pane-scroll-new-46">
+  
+  <div class="pane-container">      
+              
+      
+    <div class="pane-content">
+      <div class="panel-display three-3x33 clearfix" id="mini-panel-event_silver_bronze_sponsors">
+    <div class="region region-first">
+    <div class="region-inner clearfix">
+          </div>
+  </div>
+  <div class="region region-second">
+    <div class="region-inner clearfix">
+          </div>
+  </div>
+  <div class="region region-third">
+    <div class="region-inner clearfix">
+          </div>
+  </div>
+  </div>
+    </div>
+  
+      
+      </div>
+</div>
+<div class="panel-pane pane-panels-mini pane-event-training-speakers" id="pane-scroll-new-47">
+  
+  <div class="pane-container">      
+              
+      
+    <div class="pane-content">
+      <div class="panel-display two-66-33 clearfix" id="mini-panel-event_training_speakers">
+    <div class="region region-two-66-33-first">
+    <div class="region-inner clearfix">
+          </div>
+  </div>
+  <div class="region region-two-66-33-second">
+    <div class="region-inner clearfix">
+          </div>
+  </div>
+  </div>
+    </div>
+  
+      
+      </div>
+</div>
+</div>
+  </div>
+</div>
+  
+
+        
+      </div><!--/main-->
+
+          </div><!--/page-->
+
+    
+  </div><!--/.container-->
+</div><!--/#content-wrapper-->
+
+
+  
+    <footer>
+      <div class="diagonal">
+        <div class="container">
+          <p>Linked Data track at the <a href="http://events.linuxfoundation.org/events/apachecon-europe/">ApacheCon EU 2014</a>.</p>
+          <p>Copyright &#169; 2014 Linux Foundation. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  <script src="http://events.linuxfoundation.org/sites/events/files/js/js_0gj6QcpfRH2jzTbCQqf7kEkm4MXY0UA_sRhwPc8jC1o.js"></script>
+<script src="http://events.linuxfoundation.org/sites/events/files/js/js_C9yyOw_iFEwfGFRyKZk2jqDpVUO8b3UfZHX_nx8GjMU.js"></script>
+<script src="http://events.linuxfoundation.org/sites/events/files/js/js__kv_X0Fv8gr-jAyCFV2K9tFPcvv906V-8O3lY7xWu4c.js"></script>
+<script>var _gaq = _gaq || [];_gaq.push(["_setAccount", "UA-831873-5"]);_gaq.push(["_setDomainName", "none"]);_gaq.push(["_setAllowLinker", true]);_gaq.push(["_trackPageview"]);(function() {var ga = document.createElement("script");ga.type = "text/javascript";ga.async = true;ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ga, s);})();</script>
+<script src="http://events.linuxfoundation.org/sites/events/files/js/js_2hcs3CVR5u1enCKSNds-ODtfNrTjp2a1ANlK2fteEyg.js"></script>
+<script src="http://events.linuxfoundation.org/sites/events/files/js/js_dNNK67BaP1JdtDB8NlnDeO-Dy9sYNbjv5FK-ZsYZKo0.js"></script>
+<script>
+          Shadowbox.path = "/sites/all/libraries/shadowbox/";
+        </script>
+<script>jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"lfevents","theme_token":"FxIYSW5_mvyJbmbHt9jrS5hooMGCxSjM_J0LT0v_N0E","js":{"sites\/all\/modules\/contrib\/chosen\/chosen.js":1,"sites\/events.linuxfoundation.org\/modules\/events\/js\/ajax_refresh.js":1,"0":1,"misc\/jquery.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"misc\/ui\/jquery.ui.core.min.js":1,"misc\/jquery.ba-bbq.js":1,"modules\/overlay\/overlay-parent.js":1,"sites\/all\/libraries\/shadowbox\/shadowbox.js":1,"sites\/all\/modules\/contrib\/shadowbox\/shadowbox_auto.js":1,"\/js\/jquery.form.min.js":1,"sites\/all\/libraries\/chosen\/chosen\/chosen.jquery.min.js":1,"sites\/all\/modules\/contrib\/memcache\/memcache_admin\/memcache.js":1,"sites\/all\/modules\/contrib\/panels\/js\/panels.js":1,"sites\/all\/modules\/contrib\/views_slideshow\/js\/views_slideshow.js":1,"sites\/events.linuxfoundation.org\/modules\/events\/js\/events.js":1,"sites\/all\/modules\/contrib\/google_analytics\/googleanalytics.js":1,"1":1,"sites\/all\/modules\/custom\/lf_assets\/includes\/js\/modernizr.custom.js":1,"sites\/all\/modules\/custom\/lf_assets\/includes\/js\/lf_assets.js":1,"sites\/all\/libraries\/superfish\/jquery.hoverIntent.minified.js":1,"sites\/all\/libraries\/superfish\/sfsmallscreen.js":1,"sites\/all\/libraries\/superfish\/supposition.js":1,"sites\/all\/libraries\/superfish\/superfish.js":1,"sites\/all\/libraries\/superfish\/supersubs.js":1,"sites\/all\/modules\/contrib\/superfish\/superfish.js":1,"sites\/all\/themes\/lfevents\/js\/jquery.fitvids.min.js":1,"sites\/all\/themes\/lfevents\/js\/bootstrap-collapse.js":1,"sites\/all\/themes\/lfevents\/js\/script.js":1,"2":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"misc\/ui\/jquery.ui.core.css":1,"misc\/ui\/jquery.ui.theme.css":1,"modules\/overlay\/overlay-parent.css":1,"sites\/all\/libraries\/shadowbox\/shadowbox.css":1,"0":1,"modules\/comment\/comment.css":1,"sites\/all\/modules\/contrib\/date\/date_api\/date.css":1,"sites\/all\/modules\/contrib\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/field\/theme\/field.css":1,"sites\/all\/modules\/contrib\/flexslider\/assets\/css\/flexslider_img.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/contrib\/views\/css\/views.css":1,"sites\/all\/libraries\/chosen\/chosen\/chosen.css":1,"sites\/all\/modules\/contrib\/chosen\/css\/chosen-drupal.css":1,"sites\/all\/modules\/contrib\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/contrib\/panels\/css\/panels.css":1,"sites\/all\/modules\/contrib\/views_slideshow\/views_slideshow.css":1,"sites\/all\/modules\/contrib\/panels\/plugins\/layouts\/onecol\/onecol.css":1,"sites\/all\/themes\/lfevents\/plugins\/layouts\/grid-ready\/two_33_66\/two_33_66.admin.css":1,"sites\/all\/modules\/contrib\/panels\/plugins\/layouts\/twocol\/twocol.css":1,"sites\/all\/themes\/lfevents\/plugins\/layouts\/grid-ready\/one\/one.admin.css":1,"sites\/all\/themes\/lfevents\/plugins\/layouts\/grid-ready\/three_3x33\/three_3x33.admin.css":1,"sites\/all\/themes\/lfevents\/plugins\/layouts\/grid-ready\/two_66_33\/two_66_33.admin.css":1,"sites\/all\/modules\/custom\/lf_assets\/includes\/header.css":1,"\/\/netdna.bootstrapcdn.com\/font-awesome\/3.1.1\/css\/font-awesome.css":1,"sites\/all\/libraries\/superfish\/css\/superfish.css":1,"sites\/all\/themes\/lfevents\/css\/style.css":1,"http:\/\/fonts.googleapis.com\/css?family=PT+Sans:700,regular\u0026subset=latin":1}},"chosen":{"selector":"select:visible[multiple]","minimum":"0","minimum_width":"200","search_contains":false,"placeholder_text_multiple":"Choose some options","placeholder_text_single":"Choose an option","no_results_text":"No results match"},"overlay":{"paths":{"admin":"user\/*\/cas\nuser\/*\/cas\/delete\/*\nfield-collection\/*\/*\/edit\nfield-collection\/*\/*\/delete\nfield-collection\/*\/add\/*\/*\nfile\/add\nfile\/add\/*\nfile\/*\/edit\nfile\/*\/usage\nfile\/*\/delete\nmedia\/*\/edit\/*\nmedia\/browser\nmedia\/browser\/*\nnode\/*\/edit\nnode\/*\/delete\nnode\/*\/revisions\nnode\/*\/revisions\/*\/revert\nnode\/*\/revisions\/*\/delete\nnode\/add\nnode\/add\/*\nnode\/*\/nodequeue\noverlay\/dismiss-message\ncfp\/proposals\/*\ncfp\/users\/*\ncfp\/reviewers\/assign\/*\ncfp\/events\/assign\/*\ncfp\/events\/edit-date\/*\nuser\/*\/shortcuts\nadmin\nadmin\/*\nbatch\ntaxonomy\/term\/*\/edit\nuser\/*\/cancel\nuser\/*\/edit\nuser\/*\/edit\/*\ntaxonomy\/*\/translate\ntaxonomy\/*\/translate\/*\nnode\/*\/translate\nnode\/*\/translate\/*\nnode\/*\/edit\/*\ntaxonomy\/term\/*\/translate\ntaxonomy\/term\/*\/translate\/*\ntaxonomy\/term\/*\/edit\/*\nnode\/*\/revisions\/view\/*\/*","non_admin":"cfp\/proposals\/*\/*\/edit"},"pathPrefixes":[],"ajaxCallback":"overlay-ajax"},"shadowbox":{"animate":true,"animateFade":true,"animSequence":"wh","auto_enable_all_images":0,"auto_gallery":0,"autoplayMovies":true,"continuous":false,"counterLimit":10,"counterType":"default","displayCounter":true,"displayNav":true,"enableKeys":true,"fadeDuration":0.35,"handleOversize":"resize","handleUnsupported":"link","initialHeight":160,"initialWidth":320,"language":"en","modal":false,"overlayColor":"#000","overlayOpacity":0.8,"resizeDuration":0.55,"showMovieControls":true,"slideshowDelay":0,"viewportPadding":20,"useSizzle":false},"ajax_refresh":{"args":["events","apachecon-europe"],"interval":60000},"googleanalytics":{"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7rj|asf|asx|avi|bin|csv|doc|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls|xml|z|zip","trackDomainMode":"2","trackCrossDomains":["events.linuxfoundation.org","events.linuxfoundation.jp"]},"superfish":{"1":{"id":1,"sf":{"animation":{"opacity":"show","height":"show"},"speed":"\u0027fast\u0027","autoArrows":true,"dropShadows":false,"disableHI":false},"plugins":{"smallscreen":{"mode":"window_width","breakpoint":420,"addSelected":false,"menuClasses":false,"hyperlinkClasses":false,"title":"Main menu"},"supposition":true,"bgiframe":false,"supersubs":{"minWidth":"12","maxWidth":"27","extraWidth":1}}}}});</script>
+
+    <div style="display:none;">
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 1032976986;
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+/* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+</div>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/1032976986/?value=0&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>  
+<script src="http://events.linuxfoundation.org/sites/events/files/js/js_A6qttd3Eznce0_1RKhBmosxoGrNKh2p3iWUJDKUGDr4.js"></script>
+<script>piAId = '7342';
+piCId = '7041';
+
+(function() {
+function async_load(){
+var s = document.createElement('script'); s.type = 'text/javascript';
+s.src = ('https:' == document.location.protocol ? 'https://pi' : 'http://cdn') + '.pardot.com/pd.js';
+var c = document.getElementsByTagName('script')[0]; c.parentNode.insertBefore(s, c);
+}
+if(window.attachEvent) { window.attachEvent('onload', async_load); }
+else { window.addEventListener('load', async_load, false); }
+})();</script>
+<!--[if lt IE 9]>
+  <script src="http://events.linuxfoundation.org/sites/all/themes/lfevents/js/respond.min.js"></script>
+<![endif]-->
+</body>
+</html>
+
